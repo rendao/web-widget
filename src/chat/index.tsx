@@ -17,6 +17,8 @@ if (confString) {
     } catch (e) {
         console.error('Failed to parse conf', confString, e);
     }
+} else {
+    conf = (window as any).Settings.Widget;
 }
 
 function injectChat() {
