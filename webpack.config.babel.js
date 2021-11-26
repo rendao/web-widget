@@ -119,7 +119,8 @@ module.exports = {
 		}),
         new CopyWebpackPlugin([
             { from: './chat.html', to: './../' },
-            { from: './demo.html', to: './../' }
+            { from: './demo.html', to: './../' },
+						{ from: './config.js', to: './../' }
         ])
 	]).concat(ENV==='production' ? [
 		new webpack.optimize.UglifyJsPlugin({
